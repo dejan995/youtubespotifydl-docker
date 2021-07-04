@@ -6,6 +6,10 @@ RUN git clone https://github.com/piyx/YoutubeSpotifyDL.git /opt/app
 # Pull base image for python.
 FROM python:3.8-slim
 
+# Set the working directory for the app.
+WORKDIR /opt/app
+
+# Copy entrypoint.sh and the git repo in the working directory.
 COPY /entrypoint.sh /opt/app/entrypoint.sh
 COPY --from=0 /opt/app/* /opt/app/
 
