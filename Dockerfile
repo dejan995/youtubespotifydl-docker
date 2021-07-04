@@ -1,16 +1,10 @@
 # Pull git base image for downloading the repo.
 FROM alpine/git:latest
 
-# Set working directory for the app.
-WORKDIR /opt/app
-
 RUN git clone https://github.com/piyx/YoutubeSpotifyDL.git /opt/app
 
 # Pull base image for python.
 FROM python:3.8-slim
-
-# Set working directory for the app.
-WORKDIR /opt/app
 
 COPY /entrypoint.sh /opt/app/entrypoint.sh
 
