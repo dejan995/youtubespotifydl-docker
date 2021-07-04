@@ -1,6 +1,7 @@
 # Pull git base image for downloading the repo.
 FROM alpine/git:latest
 
+# Clone the git repo.
 RUN git clone https://github.com/piyx/YoutubeSpotifyDL.git /opt/app
 
 # Pull base image for python.
