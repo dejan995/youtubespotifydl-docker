@@ -7,7 +7,7 @@ RUN git clone https://github.com/piyx/YoutubeSpotifyDL.git /opt/app
 FROM python:3.8-slim
 
 COPY /entrypoint.sh /opt/app/entrypoint.sh
-COPY --from=0 /opt/app/* /opt/app
+COPY --from=0 /opt/app/* /opt/app/
 
 RUN cd /opt/app && \
     # Install requirements using pip
