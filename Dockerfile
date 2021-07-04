@@ -10,4 +10,3 @@ RUN cd /opt/app && \
     sed -i.bak '419s/None/False/' /usr/local/lib/python3.8/site-packages/spotipy/oauth2.py
 
 ENTRYPOINT [ "/opt/app/entrypoint.sh" ]
-CMD [ "bin/bash", "python3", "/opt/app/main.py" ]
