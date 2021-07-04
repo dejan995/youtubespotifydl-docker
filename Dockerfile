@@ -6,6 +6,7 @@ WORKDIR /opt/app
 
 COPY ./* /opt/app/
 
-RUN apt install python3-pip && \
+RUN apt update && \
+    apt install python3-pip && \
     cd /opt/app && \
     pip3 install -r requirements.txt
