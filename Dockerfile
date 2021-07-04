@@ -13,4 +13,4 @@ RUN apt update -y && \
     chmod +x entrypoint.sh
 
 ENTRYPOINT [ "/opt/app/entrypoint.sh" ]
-CMD [ "python3 /opt/app/main.py" ]
+CMD [ "python3", "/opt/app/main.py" ]
