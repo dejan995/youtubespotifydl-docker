@@ -12,5 +12,5 @@ RUN apt update -y && \
     pip3 install -r requirements.txt && \
     chmod +x entrypoint.sh
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
 CMD [ "python3 /opt/app/main.py" ]
