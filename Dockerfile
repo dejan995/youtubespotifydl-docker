@@ -32,4 +32,4 @@ VOLUME [ "/app" ]
 VOLUME [ "/downloads" ]
 
 ENTRYPOINT [ "/opt/app/entrypoint.sh" ]
-CMD [ "/bin/bash" ]
+CMD [ "/bin/sh" ]
