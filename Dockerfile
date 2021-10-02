@@ -5,7 +5,7 @@ FROM alpine/git:latest
 RUN git clone https://github.com/piyx/YoutubeSpotifyDL.git /opt/app
 
 # Pull base image for python.
-FROM python:3.8-slim
+FROM python:3.8-alpine3.14
 
 # Set the working directory for the app.
 WORKDIR /opt/app
@@ -16,7 +16,7 @@ COPY --from=0 /opt/app/* /opt/app/
 
 RUN cd /opt/app && \
     # Install requirements using pip
-    pip3 install -r requirements.txt && \
+    pip3 install --no-cache-dir -r requirements.txt && \
     # Make the entrypoint executable
     chmod +x entrypoint.sh && \
     # Fix spotipy to show the URL on terminal instead of trying to open a browser
