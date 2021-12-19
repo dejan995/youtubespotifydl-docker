@@ -27,7 +27,7 @@ RUN cd /opt/app && \
     # Make the update script executable
     chmod +x /usr/local/bin/update && \
     # Fix spotipy to show the URL on terminal instead of trying to open a browser
-    sed -i.bak '419s/None/False/' /usr/local/lib/python3.8/site-packages/spotipy/oauth2.py && \
+    sed -i.bak '470s/None/False/' /usr/local/lib/python3.8/site-packages/spotipy/oauth2.py && \
     # Clean up.
     apk del build-base
 
