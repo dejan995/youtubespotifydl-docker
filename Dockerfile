@@ -14,6 +14,9 @@ WORKDIR /opt/app
 COPY /entrypoint.sh /opt/app/entrypoint.sh
 COPY --from=0 /opt/app/* /opt/app/
 
+# Copy update script to user path
+COPY /update /usr/local/bin
+
 RUN cd /opt/app && \
     # Install build tools
     apk add --no-cache build-base && \
