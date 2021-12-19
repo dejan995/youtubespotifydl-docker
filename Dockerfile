@@ -18,8 +18,8 @@ COPY --from=0 /opt/app/* /opt/app/
 COPY /update /usr/local/bin
 
 RUN cd /opt/app && \
-    # Install build tools
-    apk add --no-cache build-base && \
+    # Install build tools and git
+    apk add --no-cache build-base git && \
     # Install requirements using pip
     pip3 install --no-cache-dir -r requirements.txt && \
     # Make the entrypoint executable
