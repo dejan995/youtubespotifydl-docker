@@ -1,0 +1,9 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: curl -u $(username):$(password) https://jenkins.dapmn.com/job/youtubespotifydl/build?token=$(token)
+  displayName: 'Triggering Jenkins build for filemin-docker'
