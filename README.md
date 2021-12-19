@@ -1,5 +1,8 @@
 ## Docker Setup 
-[![Build Status](https://jenkins.dapmn.com/buildStatus/icon?job=youtubespotifydl)](https://jenkins.dapmn.com/job/youtubespotifydl/)
+[![Build Status](https://jenkins.dapmn.com/buildStatus/icon?job=youtubespotifydl&style=plastic&subject=Docker%20Build)](https://jenkins.dapmn.com/job/youtubespotifydl/)
+![Docker Pulls](https://img.shields.io/docker/pulls/dejan995/youtubespotifydl-docker?label=Docker%20Pulls&logo=docker&logoColor=white&style=plastic)
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/dejan995/youtubespotifydl-docker?label=Image%20Size&logo=docker&logoColor=white&style=plastic)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/dejan995/youtubespotifydl-docker/latest?label=Version&style=plastic)
 
 Before running the image you need to create a `.env` file with the following contents:
 
