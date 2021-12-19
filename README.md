@@ -1,4 +1,5 @@
 ## Docker Setup 
+[![Build Status](https://jenkins.dapmn.com/buildStatus/icon?job=youtubespotifydl)](https://jenkins.dapmn.com/job/youtubespotifydl/)
 
 Before running the image you need to create a `.env` file with the following contents:
 
