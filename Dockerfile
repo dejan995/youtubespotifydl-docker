@@ -24,7 +24,6 @@ RUN cd /opt/app && \
     # Fix spotipy to show the URL on terminal instead of trying to open a browser
     sed -i.bak '419s/None/False/' /usr/local/lib/python3.8/site-packages/spotipy/oauth2.py && \
     # Clean up.
-    rm -r .gitignore HEAD README.md branches config copy.png description example.gif folder.png hooks index info logs musicplayer.png objects packed-refs redirecturi.png refs setup.png terminal.png && \
     apk del build-base
 
 # Declare mounting points.
