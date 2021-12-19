@@ -4,6 +4,8 @@
 ![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/dejan995/youtubespotifydl-docker?label=Image%20Size&logo=docker&logoColor=white&style=plastic)
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/dejan995/youtubespotifydl-docker/latest?label=Version&style=plastic)
 
+**NOTE: This is just a packaged version of the tool. The official GitHub repo can be found [here](https://github.com/piyx/YoutubeSpotifyDL).**
+
 Before running the image you need to create a `.env` file with the following contents:
 
 `SPOTIFY_USER_ID=your_user_id`  
