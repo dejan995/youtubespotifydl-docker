@@ -24,6 +24,8 @@ RUN cd /opt/app && \
     pip3 install --no-cache-dir -r requirements.txt && \
     # Make the entrypoint executable
     chmod +x entrypoint.sh && \
+    # Make the update script executable
+    chmod +x /usr/local/bin/update && \
     # Fix spotipy to show the URL on terminal instead of trying to open a browser
     sed -i.bak '419s/None/False/' /usr/local/lib/python3.8/site-packages/spotipy/oauth2.py && \
     # Clean up.
